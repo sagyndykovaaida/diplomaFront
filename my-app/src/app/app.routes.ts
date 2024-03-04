@@ -1,5 +1,17 @@
-import { Routes } from '@angular/router';
+import { NgModule } from '@angular/core';
+import { RouterModule, Routes } from '@angular/router';
+import {GreetingComponent} from "./pages/greeting/greeting.component";
 
-export const routes: Routes = [
-  // { path: '', pathMatch: 'full', redirectTo: '/welcome' },
-  ];
+const routes: Routes = [
+  {
+    path: 'home',
+    component: GreetingComponent,
+  },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+];
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule],
+})
+export class AppRoutingModule {}

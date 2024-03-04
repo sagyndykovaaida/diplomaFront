@@ -1,15 +1,25 @@
-import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import {Component, OnInit} from '@angular/core';
+import {RouterOutlet} from "@angular/router";
+import {HomePageComponent} from "./pages/home-page/home-page.component";
+import {HeaderComponent} from "./pages/header/header.component";
+import {FooterComponent} from "./pages/footer/footer.component";
+
 
 @Component({
   selector: 'app-root',
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterOutlet
-  ],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  // imports: [
+  //   RouterOutlet,
+  //   HomePageComponent,
+  //   HeaderComponent,
+  //   FooterComponent,
+  //   // AppModule
+  // ],
+  styleUrl: './app.component.scss'
 })
-export class AppComponent {}
+
+export class AppComponent implements OnInit {
+  ngOnInit(){
+
+  }
+}

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzPageHeaderModule } from 'ng-zorro-antd/page-header';
 import {NzSpaceComponent} from "ng-zorro-antd/space";
@@ -20,6 +20,6 @@ import {NgOptimizedImage} from "@angular/common";
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss'
 })
-export class HeaderComponent {
+export class HeaderComponent  {
 
 }

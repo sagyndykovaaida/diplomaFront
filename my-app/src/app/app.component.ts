@@ -2,18 +2,19 @@ import {Component, OnInit} from '@angular/core';
 import {RouterOutlet} from "@angular/router";
 import {HomePageComponent} from "./pages/home-page/home-page.component";
 import {HeaderComponent} from "./pages/header/header.component";
-// import {AppModule} from "./app.module";
+import {FooterComponent} from "./pages/footer/footer.component";
+
 
 @Component({
   selector: 'app-root',
-  standalone: true,
   templateUrl: './app.component.html',
-  imports: [
-    RouterOutlet,
-    HomePageComponent,
-    HeaderComponent,
-    // AppModule
-  ],
+  // imports: [
+  //   RouterOutlet,
+  //   HomePageComponent,
+  //   HeaderComponent,
+  //   FooterComponent,
+  //   // AppModule
+  // ],
   styleUrl: './app.component.scss'
 })
 

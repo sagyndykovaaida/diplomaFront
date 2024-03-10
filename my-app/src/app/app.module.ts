@@ -14,22 +14,11 @@ import {NgOptimizedImage} from "@angular/common";
 import {NzIconDirective} from "ng-zorro-antd/icon";
 @NgModule({
     declarations: [
-        AppComponent,
-
-
+        AppComponent
     ],
     imports: [
         BrowserModule,
-        AppRoutingModule,
-        NzGridModule,
-        NzPageHeaderModule,
-        NzSpaceComponent,
-        NzDescriptionsComponent,
-        NzDescriptionsItemComponent,
-        NzButtonComponent,
-        NgOptimizedImage,
-        HeaderComponent,
-        NzIconDirective
+        AppRoutingModule
     ],
     providers: [GreetingComponent],
     bootstrap: [AppComponent],
